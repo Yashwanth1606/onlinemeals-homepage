@@ -1,0 +1,236 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variables */
+/* :root{
+    --navbar-height:400px
+} */
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+/* logo and image */
+#logo{
+    /* border: 1px solid red; */
+    margin: 7px 30px 7px 13px;
+}
+#logo img{
+    width: 70px;
+    height: 70px;
+}
+/* navbar lists */
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+#navbar ul{
+   /* border: 1px solid red; */
+   display: flex;
+   margin: 0px 0px 0px 0px;
+   font-family: 'Castoro', serif;
+}
+ #navbar ul li{
+    justify-content: center;
+    list-style: none;
+    font-size: 1.3rem ;
+}
+ #navbar ul li a{
+     color: white;
+     display: block;
+     padding: 3px 10px 3px 10px;
+     text-decoration: none;
+     border-radius: 10px;
+}
+ #navbar ul li a:hover{
+     color: black;
+    background-color: white;
+ }
+ /* home section */
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px 5px 200px;
+    height: 313px;
+    justify-content: center;
+    align-items: center;
+     /* position: absolute; */
+ }
+ #home::before{
+    content: "";
+    position: absolute;
+    background: url(../img/bg3.jpg) no-repeat center center/cover;
+    height: 410px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Castoro', serif;
+}
+#home p{
+    color: rgb(250, 250, 250);
+    text-align: center;
+    /* font-family: 'Castoro', serif; */
+    /* font-family: 'Jomhuria', cursive; */
+}
+#home h2{
+    font-family: 'Castoro', serif;
+}
+
+
+/* services section */
+#services{
+    margin: 20px;
+    display: flex;
+}
+#services .box{
+    /* border: 2px solid red; */
+    margin: 5px 10px;
+    padding: 20px;
+    border-radius: 13px;
+    background-color: rgb(243 240 240);
+    box-shadow: 10px 10px 10px rgba(20, 20, 20, 0.5);
+    /* transition: all 1s ease-in-out 0; */
+}
+
+/* #services .box:hover{
+    zoom: 5px;
+} */
+#services .box img{
+    height: 100px;
+    width: 150px;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+
+}
+#services .box p{
+    text-align: center;
+    font-family: 'Castoro', serif;
+    /* font-family: 'Jomhuria', cursive; */
+}
+/* client section */
+#client-section{
+    height: 300px;
+    /* border: 1px solid red; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/bg4.jpg);
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+#clients .client-item img{
+    /* border: 2px solid red; */
+    width: 150px;
+    height: 150px;
+    padding: 5px 5px;
+    margin: 45px 60px 25px 60px;
+}
+ 
+/* Login Credencials */
+#loginredirect{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    margin: 0px 0px;
+    
+}
+
+#loginredirect a{
+    color: rgb(50, 6, 87);
+    padding: 0px 105px;
+    /* margin: 0px 0px 0px 30px; */
+    text-decoration: none; 
+    /* border: 1px solid red; */
+}
+
+#loginredirect a:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* contactus section */
+#contact{
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../img/contact.jpg);
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#contact .contactus{
+    font-size: 2rem;
+    margin: 100px 50px 10px 100px;;
+}
+#contact .footer
+{
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+}
+
+/* utility clases */
+.h-primary{
+    font-size: 3rem;
+    padding: 10px 5px;
+
+}
+.h-primary1{
+    font-size: 3rem;
+    padding: 10px 5px;
+    text-align: center;
+    text-shadow: 2px 2px 25px black;
+
+}
+.h-secondary1{
+    text-align: center;
+    font-size: 2rem;
+        
+
+}
+.btn{
+    margin: 10px 0px;
+    padding: 5px 20px;
+    color: white;
+    border: 2px solid rgb(141, 141, 141);
+    background-color: rgb(3, 3, 3);
+    border-radius: 5px;
+    opacity: 0.7;
+    font-size: 1.0rem;
+    cursor: pointer;
+}

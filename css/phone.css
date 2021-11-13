@@ -1,0 +1,41 @@
+/* body{
+    background-color: black;
+} */
+/* navigation */
+#navbar{
+    flex-direction: column;
+}
+/* homesection */
+#home{
+    height: 380px;
+    padding: 0px 0px;
+}
+#home::before{
+    height: 520px;
+    
+}
+#home p{
+    font-size: 20px;
+    
+}
+/* servicessection */
+#services{
+    flex-direction: column ;
+}
+
+/* client section */
+
+#clients .client-item img{
+    width: 33px;
+    height: 41px;
+    padding: 5px 5px;
+    margin: 97px -15px 25px 22px;
+} 
+#loginredirect{
+    display: none;
+}
+
+#contact .contactus{
+    font-size: 16px;
+    margin: 90px 0px 10px 12px;
+}
